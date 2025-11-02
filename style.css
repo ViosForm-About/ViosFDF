@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #010f1c, #000);
+  color: #00fff7;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#holo-overlay {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+h1.glow {
+  font-size: 2.5em;
+  text-shadow: 0 0 10px #00fff7, 0 0 30px #00fff7;
+}
+
+p.desc {
+  color: #80f8ff;
+  text-shadow: 0 0 10px #00fff7;
+  margin-top: -10px;
+}
+
+canvas#three-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.terminal {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  background: rgba(0, 10, 25, 0.9);
+  border: 1px solid #00fff7;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00fff7;
+  padding: 20px;
+  text-align: left;
+  z-index: 3;
+}
+
+.terminal .header {
+  font-weight: bold;
+  color: #00fff7;
+  margin-bottom: 10px;
+}
+
+#action-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: #00fff7;
+  color: #000;
+  border: none;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#action-btn:hover {
+  background: #0ff;
+  box-shadow: 0 0 20px #00fff7;
+}
